@@ -1,0 +1,99 @@
+:root{
+    --body-bg:#fff ;
+    --body-color:#000 ;
+    --sec-bg: #ccc ;
+}
+.dark{
+    --body-bg:#000 ;
+    --body-color:#fff ;
+    --sec-bg: #555 ;
+}
+
+
+body{
+    background-color: var(--body-bg);
+    transition: 0.5s;
+}
+
+
+.sidebar-link a{
+    color: var(--body-color);
+    transition: 0.5s;
+}
+.sidebar-link a:hover{
+    color: green;
+    margin-left: 10px;
+}
+.sidebar-link a.active{
+    color: green;
+}
+.sidebar-link .sub-menu{
+    display: none;
+}
+.sidebar-link .sub-menu a{
+    display: block;
+    text-decoration: none;
+}
+
+
+nav{
+    position: relative;
+}
+.right_nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.right_nav img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    outline: 2px solid green;
+}
+.left_nav i{
+    cursor: pointer;
+    color: var(--body-color);
+}
+.right_nav i{
+
+    color: var(--body-color);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.right_nav i:hover{
+    color: green;
+}
+.setting{
+    width: 200px;
+    position:absolute ;
+    right: 20px;
+    top: 83px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ccc;
+    display: none;
+}
+.setting a{
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+}
+.setting a:hover{
+    background-color: #eee;
+}
+.chart-1{
+    background-color: var(--sec-bg);
+    color: var(--body-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.5s;
+}
+
+
+.fa-sun{
+    display: none;
+}
